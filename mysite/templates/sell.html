@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  
+  <p> {{ price }}</p>
+
+  <!-- {{ log }} -->
+  <div>
+    {% if log %}
+      {% for e in log %}
+        <p> {{e}} <p>
+      {% endfor %}
+    {% endif %}
+  </div>
+
+  
+{% endblock %}
